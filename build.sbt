@@ -1,28 +1,28 @@
 name := "swagger-play2"
 organization := "io.swagger"
 
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.4"
 
 crossScalaVersions := Seq(scalaVersion.value, "2.12.10")
 
-val PlayVersion = "2.7.3"
-val SwaggerVersion = "1.5.24"
-val Specs2Version = "4.6.0"
+val PlayVersion = "2.8.2"
+val SwaggerVersion = "1.6.2"
+val Specs2Version = "4.8.3"
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % PlayVersion,
   "com.typesafe.play" %% "routes-compiler" % PlayVersion,
   "io.swagger" % "swagger-core" % SwaggerVersion,
   "io.swagger" %% "swagger-scala-module" % "1.0.6",
-  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.9",
-  "org.scala-lang.modules" %% "scala-collection-compat" % "2.1.2",
-  "org.slf4j" % "slf4j-api" % "1.7.21",
+  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.12.1",
+  "org.scala-lang.modules" %% "scala-collection-compat" % "2.1.3",
+  "org.slf4j" % "slf4j-api" % "1.7.30",
 
   "com.typesafe.play" %% "play-ebean" % "5.0.2" % "test",
   "org.specs2" %% "specs2-core" % Specs2Version % "test",
   "org.specs2" %% "specs2-mock" % Specs2Version % "test",
   "org.specs2" %% "specs2-junit" % Specs2Version % "test",
-  "org.mockito" % "mockito-core" % "2.21.0" % "test"
+  "org.mockito" % "mockito-core" % "3.2.0" % "test"
 )
 
 // see https://github.com/scala/bug/issues/11813
